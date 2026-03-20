@@ -1,0 +1,4 @@
+"You may not sleep, there are monsters nearby."
+I use Arch BTW
+sudo rm -rf / --no-preserve-root
+password: 12345

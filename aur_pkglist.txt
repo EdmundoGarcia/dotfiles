@@ -1,0 +1,7 @@
+
+candy-icons-git
+ripdrag
+swayosd-git
+sweet-gtk-theme-dark
+wlogout
+yay

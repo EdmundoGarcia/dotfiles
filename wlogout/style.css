@@ -1,0 +1,40 @@
+@define-color bg #282c34;
+@define-color bg_alt #31353f;
+@define-color fg #abb2bf;
+@define-color red #e06c75;
+@define-color blue #61afef;
+
+window {
+    background-color: rgba(40, 44, 52, 0.85); 
+}
+
+button {
+    color: @fg;
+    background-color: @bg_alt;
+    outline-style: none;
+    border: 1px solid rgba(171, 178, 191, 0.1);
+    border-radius: 20px;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    transition: all 0.2s ease-in-out;
+}
+
+button:focus, button:active, button:hover {
+    background-color: @blue;
+    color: @bg;
+    border: 1px solid @blue;
+}
+
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }
+
+#shutdown:hover {
+    background-color: @red;
+    border-color: @red;
+}
