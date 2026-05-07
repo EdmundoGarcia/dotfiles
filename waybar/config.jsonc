@@ -1,19 +1,22 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 57,
+    "height": 38,
     "spacing": 0,
     "on-sigusr1": "hide",
     "on-sigusr2": "show",
+    "reload_style_on_change": true,
     "modules-left": [
-        "hyprland/workspaces"
-        // "hyprland/window"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
+        "memory",
         "pulseaudio",
+        "bluetooth",
         "network",
         "battery",
         "tray",
@@ -21,30 +24,60 @@
         "custom/power"
     ],
     "hyprland/workspaces": {
-        "format": "{name}",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十"
+        },
+        "active-only": false,
         "on-click": "activate",
-        "all-outputs": true,
+        "all-outputs": false,
         "persistent-workspaces": {
             "*": 5
-        }
+        },
     },
-    // "hyprland/window": {
-    //     "format": "󰣇 {class}",
-    //     "max-length": 25,
-    //     "separate-outputs": true
-        // },
-        // "cpu": {
-        //     "interval": 2,
-        //     "format": "<span color='#56b6c2'>󰻠</span> {usage}%"
-        // },
-        // "memory": {
-        //     "interval": 5,
-        //     "format": "<span color='#d19a66'>󰍛</span> {percentage}%"
-    //},
+    "hyprland/window": {
+        "format": "󰣇 {class}",
+        "max-length": 25,
+        "separate-outputs": true
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "<span color='#56b6c2'>󰻠</span> {usage}%"
+    },
+    "memory": {
+        "interval": 5,
+        "format": "<span color='#d19a66'>󰍛</span> {percentage}%"
+    },
     "clock": {
-        "format": "󰥔 {:%H:%M}",
-        "format-alt": "󰃭 {:%A, %B %d}",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "format-alt": "<span color='#bd93f9'>{:%A, %B %d, %Y (%H:%M)}</span>",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ff79c6'><b>{}</b></span>",
+                "days": "<span color='#f8f8f2'><b>{}</b></span>",
+                "weekdays": "<span color='#8be9fd'><b>{}</b></span>",
+                "today": "<span color='#bd93f9'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
     "network": {
         "format-wifi": "󰤨",
@@ -64,6 +97,15 @@
             ]
         },
         "on-click": "pavucontrol"
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": "",
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{device_alias}",
+        "tooltip-format-connected": " {device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}",
+        "on-click": "blueman-manager"
     },
     "battery": {
         "interval": 60,
