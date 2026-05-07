@@ -1,20 +1,35 @@
 font_family GeistMono Nerd Font Mono
-font_size 10
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+hide_window_decorations yes
+
+
+font_size 11
 disable_ligatures no
 enable_audio_bell no 
 
 shell 		  zsh
 shell_integration 	disabled
 cursor_shape block
+cursor_blink_interval 0
+detect_urls yes
+mouse_hide_wait 3.0
 url_style curly
+
+foreground #c0caf5
+background #24283b
+selection_foreground #24283b
+selection_background #c0caf5
 
 remember_window_size no
 initial_window_width 640
 initial_window_height 480
-window_padding_width 27
+window_padding_width 10
 modify_font line_height 100%
 
-background_opacity 0.75
+background_opacity 0.967
 
 scrollbar_handle_opacity 0
 scrollbar_track_opacity 0
