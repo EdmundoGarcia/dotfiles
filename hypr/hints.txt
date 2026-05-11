@@ -2,3 +2,4 @@
 I use Arch BTW
 sudo rm -rf / --no-preserve-root
 password: 12345
+There is no place like ~

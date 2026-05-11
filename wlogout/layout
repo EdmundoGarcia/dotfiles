@@ -1,36 +1,30 @@
 {
     "label" : "lock",
-    "action" : "loginctl lock-session",
-    "text" : "Lock",
+    "action" : "hyprlock",
+    "text" : "Save Game",
     "keybind" : "l"
 }
 {
-    "label" : "hibernate",
-    "action" : "systemctl hibernate",
-    "text" : "Hibernate",
-    "keybind" : "h"
-}
-{
     "label" : "logout",
-    "action" : "loginctl terminate-user $USER",
-    "text" : "Logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Quit to Title",
     "keybind" : "e"
-}
-{
-    "label" : "shutdown",
-    "action" : "systemctl poweroff",
-    "text" : "Shutdown",
-    "keybind" : "s"
-}
-{
-    "label" : "suspend",
-    "action" : "systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
 }
 {
     "label" : "reboot",
     "action" : "systemctl reboot",
-    "text" : "Reboot",
+    "text" : "Respawn",
     "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Exit Game",
+    "keybind" : "s"
+}
+{
+    "label" : "sleep",
+    "action" : "systemctl suspend",
+    "text" : "Bedtime",
+    "keybind" : "z"
 }
