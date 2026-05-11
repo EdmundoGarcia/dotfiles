@@ -42,7 +42,7 @@ help2man
 hypridle
 hyprland
 hyprlock
-hyprpaper
+#hyprpaper
 hyprpicker
 hyprpolkitagent
 hyprsunset
