@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on = "e"
+run = 'shell "setsid -f ripdrag -i -x -s 256 \"$@\"" --orphan'
+desc = "Drag and Drop (Ripdrag)"

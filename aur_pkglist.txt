@@ -1,6 +1,7 @@
 candy-icons-git
 otf-minecraft
 otf-monocraft
+ripdrag
 rofi-git
 rofi-git-debug
 swayosd-git
