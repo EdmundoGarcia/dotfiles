@@ -1,4 +1,6 @@
-[opener]
-edit = [
-  { run = 'micro "$@"', block = true }
-]
+[[opener.edit]]
+run = 'micro "$@"'
+block = true
+
+[mgr]
+sort_by = "natural"
