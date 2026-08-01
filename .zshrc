@@ -76,10 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git
-	zsh-shift-select 
-)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,8 +109,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias tlp-school='sudo tlp setcharge 90 95 BAT0 && notify-send -u normal -h string:x-canonical-private-synchronous:tlp -a "TLP" -i battery-full-charging "Battery: School Mode" "Limit set to 95%"'
-alias tlp-home='sudo tlp setcharge 45 50 BAT0 && notify-send -u normal -h string:x-canonical-private-synchronous:tlp -a "TLP" -i battery-good-charging "Battery: Home Mode" "Limit set to 50%"'
+alias ls='eza --icons=auto --group-directories-first'
+alias l='eza -lh --icons=auto --group-directories-first'
+alias ll='eza -lha --icons=auto --git --group-directories-first'
+alias lt='eza --tree --level=2 --icons=auto'
 
 alias nano='micro'
 alias vim='micro'
