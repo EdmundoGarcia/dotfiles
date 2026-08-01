@@ -21,5 +21,3 @@ ttf-meslo-nerd-font-powerlevel10k
 vscodium-bin
 wlogout
 xorg-font-utils
-yay
-yay-debug

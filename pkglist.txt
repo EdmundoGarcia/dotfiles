@@ -9,7 +9,6 @@ bat
 bluetui
 bluez
 bluez-utils
-bottom
 brightnessctl
 btop
 btrfs-progs
@@ -71,8 +70,6 @@ obs-studio
 obsidian
 otf-font-awesome
 otf-geist-mono-nerd
-otf-minecraft
-otf-monocraft
 packettracer
 pacman-contrib
 papirus-icon-theme
@@ -100,14 +97,12 @@ qt6-wayland
 resvg
 ripdrag
 ripgrep
-rofi-git
 rustup
 sddm
 slurp
 sof-firmware
 sudo
 swaync
-swayosd-git
 sweet-cursors-git
 sweet-folders-icons-git
 sweet-gtk-theme-git
@@ -132,12 +127,10 @@ vala
 vlc
 vlc-plugins-all
 vpl-gpu-rt
-vscodium-bin
 waybar
 wget
 wireplumber
 wl-clipboard
-wlogout
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
