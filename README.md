@@ -11,3 +11,4 @@ https://github.com/TearsInRein/firefox-sweet-theme
 
 https://github.com/Prateek-squadron/hyprconf2lua
 
+https://github.com/Diolinux/Photogimp
