@@ -97,12 +97,14 @@ qt6-wayland
 resvg
 ripdrag
 ripgrep
+rofi
 rustup
 sddm
 slurp
 sof-firmware
 sudo
 swaync
+swayosd
 sweet-cursors-git
 sweet-folders-icons-git
 sweet-gtk-theme-git

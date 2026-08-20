@@ -12,3 +12,9 @@ https://github.com/TearsInRein/firefox-sweet-theme
 https://github.com/Prateek-squadron/hyprconf2lua
 
 https://github.com/Diolinux/Photogimp
+
+---
+
+## Credits
+
+[hyprlock theme](https://www.reddit.com/r/hyprland/comments/1naez3c/minecraft_end_hyprlock/)

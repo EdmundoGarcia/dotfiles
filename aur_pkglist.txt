@@ -9,9 +9,6 @@ paru-debug
 postman-bin
 ripdrag
 ripdrag-debug
-rofi-git
-rofi-git-debug
-swayosd-git
 sweet-cursors-git
 sweet-folders-icons-git
 sweet-gtk-theme-git
