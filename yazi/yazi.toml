@@ -1,5 +1,5 @@
 [[opener.edit]]
-run = 'micro "$@"'
+run = 'micro %s'
 block = true
 
 [mgr]
